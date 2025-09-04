@@ -6,13 +6,14 @@ public class FibonacciSeries {
     public static void Fibonacci(int n){
         int a=0;
         int b=1;
-        int c;
-        System.out.print(a+"\n"+b+"\n");
+        int c=1;
+        
         for (int i = 0; i <= n; i++) {
-            c=a+b;
-            System.out.println(c);
+            
+            System.out.println(a);
             a=b;
             b=c;
+            c=a+b;
             
         }
 

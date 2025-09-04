@@ -1,0 +1,21 @@
+Mail Management System:
+
+1.Store Module:
+    Mail has Sender,Receiver,Subject,Content,Tag.
+
+2.Delete Module
+
+3.Tag Module:
+     User can add a tag to mails.(Ex:professional,work...).
+
+4.Stats Module:
+     It shows the count of the mail,group of tags,recent N mails.
+
+5.Spam Module:
+     We need to tag spamm based on the directory of words.
+
+6.Search:
+     We need to search based on the query.
+
+7.Wildcard:
+        ex: *mk

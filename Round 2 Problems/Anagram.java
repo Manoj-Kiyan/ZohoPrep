@@ -30,7 +30,7 @@ public class Anagram {
         }
     }
     public static boolean Anagram2(String str1,String str2){
-        str1=str1.toLowerCase();
+        str1=str1.toLowerCase();                        //"integral";"triangle"
         str2=str2.toLowerCase();
         if(str1.length()!=str2.length()){
             return false;

@@ -42,7 +42,7 @@ public class Palindrome {
       return ispalin;
      
     }
-
+//121
     public static boolean  PalinNo(int in){
         int n=in;
         int reversed=0;

@@ -6,11 +6,15 @@ import java.util.Map;
 
 
 public class ParkingLot {
-    private List<Slot> slots = new ArrayList<>();
+    private List<Slot> slots;
     private Map<Integer, Ticket> activeTickets = new HashMap<>();
     private FeeCalculator calculator = new SimpleFeeCalculator();
     private int ticketCounter = 0;
-
+    public ParkingLot(){
+        slots=new ArrayList<>();
+        slots.add(new Slot(1, VehicleType.BIKE));
+        slots.add(new Slot(2, VehicleType.CAR));
+    }
     public void addSlot(Slot slot) { slots.add(slot); }
 
     public Ticket park(Vehicle vehicle) throws Exception {

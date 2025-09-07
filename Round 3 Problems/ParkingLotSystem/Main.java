@@ -7,8 +7,8 @@ public class Main {
         ParkingLot lot = new ParkingLot();
 
         // Add Slots (for demo)
-        lot.addSlot(new Slot(1, VehicleType.BIKE));
-        lot.addSlot(new Slot(2, VehicleType.CAR));
+        //lot.addSlot(new Slot(1, VehicleType.BIKE));
+        //lot.addSlot(new Slot(2, VehicleType.CAR));
 
         while (true) {
             System.out.println("\n1. Park\n2. Unpark\n3. Exit");

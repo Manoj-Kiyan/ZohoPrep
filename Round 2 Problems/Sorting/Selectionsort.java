@@ -18,7 +18,7 @@ public class Selectionsort {
     }
     static int maxitem(int[] arr,int start,int last){
         int max=start;
-        for (int i = start; i <=last; i++) {
+        for (int i = start ; i <=last; i++) {
             if(arr[max]<arr[i]){
                 max=i;
             }

@@ -9,7 +9,7 @@ public class CricketScore {
         int player1Score=0;
         int player2Score=0;
         int extras=0;
-        boolean isplayer1OnStrike=false;
+        boolean isplayer1OnStrike= false;
         String[] events=scores.split(" ");
 
         for (String event : events) {

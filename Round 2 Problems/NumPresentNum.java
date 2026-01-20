@@ -1,14 +1,15 @@
 public class NumPresentNum {
     public static void main(String[] args) {
         int num1=2316;
-        int num2=814802316;
+        int num2=2316;
         //isPresent1(num1,num2);
         isPresent(num1,num2);
 
-        if(isPresent1(num1, num2)){
+        if(isPresent(num1, num2)){
             System.out.println(num1+" is Present in "+num2);
         }
         else{
+
             System.out.println(num1+" is Not Present in "+num2);
         }
     }
@@ -24,7 +25,7 @@ public class NumPresentNum {
         int len=getLen(num1);
         int pow=(int)Math.pow(10, len);
 
-        while(num1<num2){
+        while(num1<=num2){
             int lastdigits=num2%pow;
 
             if(isSame(num1,lastdigits)){
@@ -32,22 +33,22 @@ public class NumPresentNum {
             }
             num2/=10;
         }
-        return false;
+         return false;
      }
      public static boolean isSame(int a,int b){
-        if(a>0 && b>0){
+        while(a>0 && b>0){
             if(a%10 != b%10) return false;
             a/=10;
             b/=10;
         }
-        return true;
+        return a==0 && b==0;
      }
 
-    private static int getLen(int num1) {
+    private static int getLen(int num) {
         int len=0;
-        while(num1>0){
+        while(num>0){
             len++;
-            num1/=10;
+            num/=10;
         }
         return len;
     }

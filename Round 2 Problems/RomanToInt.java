@@ -31,7 +31,6 @@ public class RomanToInt {
             } else {
                 result += current;
             }
-
             prevValue = current;
         }
 

@@ -4,10 +4,14 @@ public class SwapTwoNum {
     }
 
     public static void Swap(int a,int b){
-        int temp=a;
-        a=b;
-        b=temp;
-        System.out.println("After SWap Two Numbers"+a+""+b);
+        // int temp=a;
+        // a=b;
+        // b=temp;
+        a=a+b - (b=a);
+
+        System.out.println("After SWap Two Numbers :");
+        System.out.println("A is :"+ a);
+        System.out.println("B is :"+ b);
     }
     
 }

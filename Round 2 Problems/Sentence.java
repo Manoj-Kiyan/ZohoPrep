@@ -1,7 +1,7 @@
 public class Sentence {
     public static void main(String[] args) {
         String lines="MuthuKumaran is the title winner of BigBoss Season 8";
-        //Reverse(lines);
+        Reverse(lines);
         VowelsAndConsonent(lines);
     }
 
@@ -11,7 +11,6 @@ public class Sentence {
        for (int i = words.length-1;i >= 0; i--) {
         reversed += words[i]+" ";
        }
-
        String biggest="";
        for(String word:words){
         if(word.length()>biggest.length()){

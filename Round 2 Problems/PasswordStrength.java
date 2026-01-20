@@ -14,6 +14,7 @@ public class PasswordStrength {
             
         }    
     }
+    
 
     public static String CheckStrength(String pass1){
         boolean isNumber=false;

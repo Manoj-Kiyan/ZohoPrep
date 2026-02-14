@@ -1,0 +1,60 @@
+// You are using Java
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+
+        // Green line stations
+        char[] green = {'A', 'B', 'C', 'J', 'K', 'L', 'D', 'E', 'F', 'G', 'H'};
+        // Red line stations
+        char[] red = {'I', 'C', 'D', 'E', 'F', 'M', 'N', 'G'};
+
+        // Find junction stations (common in both lines)
+        ArrayList<Character> junctions = new ArrayList<>();
+        for (char g : green) {
+            for (char r : red) {
+                if (g == r && !junctions.contains(g)) {
+                    junctions.add(g);
+                }
+            }
+        }
+
+        // Print all junction station names
+        System.out.print("Junction stations: ");
+        for (char j : junctions) {
+            System.out.print(j + " ");
+        }
+
+        // Krish starts at A, Varun waits at E
+        // Find shortest path: A → B → C → D → E
+        int startIndex = -1, endIndex = -1;
+
+        // Find index of C (junction) and E (destination)
+        for (int i = 0; i < green.length; i++) {
+            if (green[i] == 'A') startIndex = i;
+            if (green[i] == 'E') endIndex = i;
+        }
+
+        // Count stations (A→B→C) on Green until junction,
+        // then continue on Red (C→D→E)
+        int countGreen = 0;
+        for (int i = startIndex; i < green.length; i++) {
+            if (green[i] == 'C') break;
+            countGreen++;
+        }
+
+        int countRed = 0;
+        for (int i = 0; i < red.length; i++) {
+            if (red[i] == 'C') { // start from junction
+                for (int j = i; j < red.length; j++) {
+                    if (red[j] == 'E') break;
+                    countRed++;
+                }
+            }
+        }
+
+        int totalStations = countGreen + countRed;
+
+        System.out.println("\nNumber of stations Krish should travel to reach Varun: " + totalStations);
+    }
+}

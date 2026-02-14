@@ -1,0 +1,69 @@
+-->Methods is also called as Functions.
+-->Method is a block of instructions, Used to perform particular task as wishes Again and Again.
+-->Note :
+        Here,return type and method name is manditory.
+Advantages:
+        -->code becomes short
+        -->Easy to read
+        -->Easy to the mistake 
+        -->Reuse again and again 
+        -->Save Time
+
+Its syntax looks like this:
+        modifier returnType methodName(parameterList) {
+            // method body
+            // statements
+            return value; // if returnType is not void
+        }
+
+Breakdown :
+modifier → access level (public, private, protected, or default)
+
+returnType → type of value returned (int, String, void, etc.)
+
+methodName → identifier for the method (e.g., calculateSum)
+
+parameterList → input values inside parentheses (int a, int b)
+
+method body → the code that runs when the method is called
+
+Examples
+Method with return value
+
+java
+public int add(int a, int b) {
+    return a + b;
+}
+
+1. Parameterized Methods
+Accept parameters (inputs) when called.
+
+Useful for passing dynamic values.
+
+java
+public int add(int a, int b) {
+    return a + b;
+}
+👉 Call: add(5, 10);
+
+2. Non-Parameterized Methods
+No parameters, fixed behavior.
+
+Often used for utility or display.
+
+java
+public void greet() {
+    System.out.println("Hello, Manoj!");
+}
+👉 Call: greet();
+
+Method Signature:
+    Method Name along with formal arguments.
+
+Method Declaration:
+    Access modifier,modifier and return type along with Method Signature.
+
+Method Implementation:
+    Method Declaration along with Body.
+
+*** Whenever exucute the program JVM will call the main method ***

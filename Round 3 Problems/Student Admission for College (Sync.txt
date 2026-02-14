@@ -1,0 +1,73 @@
+Student Admission for College (SyncCET)
+
+Need to prepare a console application for the student admission process.
+
+Main menu:
+1.Student Registration
+2. Student Login
+3.Department-wise Seat Availability
+4. Exit
+
+1. Student Registration:
+Ask and get the details below from the student.
+StudentName
+FatherName
+DOB
+Gender - Enum (Select, Male, Female, Transgender)
+EmaillD
+Physics
+Chemistry
+Maths
+
+After getting all above details create student object and add to students list and Show "Student
+Registered Successfully and StudentID is
+
+2. Student Login:
+
+· Ask and get the StudentID, check if the student ID is there in the students list.
+If it is not available in the students list Display "Invalid StudentID. Please enter the valid
+one", Then return to main menu.
+. If it is valid, display the following submenu:
+a. Check Eligibility
+b. Show Student Details
+Take Admission
+c.
+
+d. Cancel Admission
+e. Show Admission History
+f. Exit
+
+Check Eligibility:
+
+Check if the student's average mark is 75.0 in Physics, Chemistry, and Math.
+· If yes, display "Student is eligible."
+· If no, display "Student is not eligible."
+
+b. Show Details:
+
+Display the details of the currently logged-in student.
+
+c. Take Admission:
+
+Display departments details by the departments list
+Ask and get the DepartmentID from the student.
+Check if the DepartmentID is present in the departments list.
+o If DepartmentID is not present, then shows "Invalid DepartmentID"
+If a DepartmentID is present, then check if the student is eligible using the Check
+Eligibility method.
+If student is not eligible display:" You are not eligible"
+If a student is eligible check if seats are available in the chosen department.
+If seats are not available, display: "Sorry, the seat count is filled".
+If seats are available, verify if the student has already taken admission by traversing the
+Admissions list.
+If the student has already taken admission, show:
+"You have already taken admission", then return to submenu.
+If the student has not taken admission:
+Reduce the seat count in the departments list.
+Create an Admission Details object and change the AdmissionStatus is (Booked)
+Add to the admissions to the admissions list.
+Finally show "Admission took successfully. Your admission ID - SF3001".
+
+d Cansal Admieeinn.
+
+a.

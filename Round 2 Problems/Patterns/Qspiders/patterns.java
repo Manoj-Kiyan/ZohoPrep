@@ -1,54 +1,54 @@
 public class patterns{
     public static void main(String[] args) throws Exception{
-        pattern1();
-        System.out.println();
-        pattern2();
-        System.out.println();
-        pattern3();
-        System.out.println();
-        pattern4();
-        System.out.println();
-        pattern5(5);
-        System.out.println();
-        pattern6(5);
-        System.out.println();
-        pattern7(5);
-        System.out.println();
-        pattern8(5);
-        System.out.println();
-        pattern9(9);
-        System.out.println();
-        pattern10(5);
-        System.out.println();
-        pattern11(5);
-        System.out.println();
-        pattern12(5);
-        System.out.println();
-        pattern13(5);
-        System.out.println();
-        pattern14(5);
-        System.out.println();
-        pattern15(5);
-        System.out.println();
-        pattern16(5);
-        System.out.println();
-        pattern17(5);
-        System.out.println();
-        pattern18(5);
-        System.out.println();
-       pattern19(5);
-       System.out.println();
-        pattern20(7);
-        System.out.println();
-        pattern21(7);
-        System.out.println();
-        pattern22(7);
-        System.out.println();
-        pattern23(7);
-        System.out.println();
+        // pattern1();
+    //     System.out.println();
+      //  pattern2();
+    //     System.out.println();
+        //  pattern3();
+    //     System.out.println();
+        // pattern4();
+    //     System.out.println();
+        // pattern5(5);
+    //     System.out.println();
+        // pattern6(5);
+    //     System.out.println();
+        // pattern7(5);
+    //     System.out.println();
+    //     pattern8(5);
+    //     System.out.println();
+        // pattern9(9);
+    //     System.out.println();
+        // pattern10(5);
+    //     System.out.println();
+        // pattern11(5);
+    //     System.out.println();
+    //     pattern12(5);
+    //     System.out.println();
+        // pattern13(5);
+    //     System.out.println();
+    //     pattern14(5);
+    //     System.out.println();
+    //     pattern15(5);
+    //     System.out.println();
+    //     pattern16(5);
+    //     System.out.println();
+    //     pattern17(5);
+    //     System.out.println();
+    //     pattern18(5);
+    //     System.out.println();
+    //    pattern19(5);
+    //    System.out.println();
+    //     pattern20(7);
+    //     System.out.println();
+    //     pattern21(7);
+    //     System.out.println();
+    //     pattern22(7);
+    //     System.out.println();
+    //     pattern23(7);
+    //     System.out.println();
         pattern24(13);
-        System.out.println();
-        pattern25(13);
+    //     System.out.println();
+    //     pattern25(13);
 
     }   
 
@@ -160,28 +160,28 @@ public class patterns{
             System.out.print("  ");
 
             for (int j = 0; j < n; j++) {
-                if(j==0||i==0||j==n-1||i==n/2) System.out.print("I ");
+                if(j==0||i==0||j==n-1||i==n/2) System.out.print("A ");
                 else System.out.print("  ");
                 Thread.sleep(50);
             }
             System.out.print("   ");
 
             for (int j = 0; j < n; j++) {
-                if(j==0 || i==j || j==n-1) System.out.print("Y ");
+                if(j==0 || i==j || j==n-1) System.out.print("N ");
                 else System.out.print("  ");
                 Thread.sleep(50);
             }
             System.out.print("  ");
             
             for (int j = 0; j < n; j++) {
-                if(i==0||j==0||i==n-1||j==n-1) System.out.print("A ");
+                if(i==0||j==0||i==n-1||j==n-1) System.out.print("O ");
                 else System.out.print("  ");
                 Thread.sleep(50);
             }
             System.out.print("  ");
 
             for (int j = 0; j < n; j++) {
-                if(i==0||j==n/2||i==n-1 && j<=n/2) System.out.print("N ");
+                if(i==0||j==n/2||i==n-1 && j<=n/2) System.out.print("J ");
                 else System.out.print("  ");
                 Thread.sleep(50);
             }
@@ -192,7 +192,7 @@ public class patterns{
         public static void pattern11(int n){
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                if(i>=j){
+                if(i>=j ){
                     System.out.print(i +" ");
                 }else{
                     System.out.print("  ");
@@ -216,7 +216,7 @@ public class patterns{
     public static void pattern13(int n){
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                if(i+j>=n-1){
+                if(i+j<=n-1){
                     System.out.print(n-j +" ");
                 }else{
                     System.out.print("  ");
